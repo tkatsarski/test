@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd
+    http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <include file="db.changelog-V0001-init-database.sql" relativeToChangelogFile="true" />
+    <changeSet author="liquibase-docs" id="1">
+        <tagDatabase tag="1.0.1" />
+    </changeSet>
+
+    <include file="db.changelog-V0002-alter-table-person.sql" relativeToChangelogFile="true" />
+    <changeSet author="liquibase-docs" id="2">
+        <tagDatabase tag="1.0.2" />
+    </changeSet>
+</databaseChangeLog>
